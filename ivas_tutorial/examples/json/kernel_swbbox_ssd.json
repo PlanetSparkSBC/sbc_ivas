@@ -1,0 +1,40 @@
+{
+"xclbin-location":"/usr/lib/dpu.xclbin",
+"ivas-library-repo": "/usr/lib/",
+"element-mode":"inplace",
+"kernels" :[
+{
+"library-name":"libivas_xboundingbox.so",
+"config": {
+"model-name" : "ssd_traffic",
+"display_output" : 1,
+"font_size" : 1,
+"font" : 2,
+"thickness" : 2,
+"debug_level" : 1,
+"label_color" : { "blue" : 0, "green" : 0, "red" : 255 },
+"label_filter" : [ "class" ],
+"classes" : [
+	{
+		"name" : "car",
+		"blue" : 255,
+		"green" : 0,
+		"red" : 0
+	},
+	{
+		"name" : "person",
+		"blue" : 0,
+		"green" : 255,
+		"red" : 0
+	},
+	{
+		"name" : "cycle",
+		"blue" : 0,
+		"green" : 0,
+		"red" : 255
+	}
+]
+}
+}
+]
+}

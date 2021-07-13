@@ -1,0 +1,1 @@
+modetest -M xlnx | head -10 | tail -1 | awk '{print $1}'
